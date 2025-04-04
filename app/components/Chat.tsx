@@ -218,17 +218,17 @@ export default function Chat() {
   return (
     <div className="flex flex-col h-full min-h-screen w-full mx-auto border border-gray-200 rounded-lg shadow-sm bg-white dark:bg-gray-800 dark:border-gray-700">
       <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Chat</h2>
+        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Chat - Casa na Serra</h2>
         <div className="flex items-center">
           <button 
             onClick={startNewSession}
             className="flex items-center bg-green-500 hover:bg-green-600 text-white px-3 py-1.5 rounded-md mr-3 transition-colors"
-            title="Start new chat"
+            title="Começar novo chat"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
             </svg>
-            <span>New Chat</span>
+            <span>Novo Chat</span>
           </button>
           <button className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -245,8 +245,8 @@ export default function Chat() {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
               </svg>
-              <p>No messages yet. Start the conversation!</p>
-              <p className="text-xs mt-2">Session ID: {sessionId.slice(0, 8)}...</p>
+              <p>Nenhuma mensagem ainda. Comece a conversa!</p>
+              <p className="text-xs mt-2">ID da sessão: {sessionId.slice(0, 8)}...</p>
             </div>
           </div>
         ) : (
